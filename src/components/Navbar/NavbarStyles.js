@@ -10,6 +10,27 @@ export const FixedNavContainer = styled.div`
   padding: 30px;
   align-items: center;
   row-gap: 15px;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    display: ${(props) => (props.active ? "flex" : "none")};
+    right: ${(props) => (props.active ? "0px" : "-250px")};\
+    z-index: 3;
+    animation: slide 0.5s forwards;
+  }
+`;
+
+export const BlurredBackground = styled.div`
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: ${(props) => props.theme.colors.blurred};
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    display: ${(props) => (props.active ? "block" : "none")};
+    right: 0px;
+    z-index: 2;
+  }
 `;
 
 export const Avatar = styled.img`
@@ -68,4 +89,22 @@ export const NavFooter = styled.span`
   font-weight: 100;
   font-size: 12px;
   margin-top: auto;
+`;
+
+export const NavButton = styled.button`
+  display: none;
+  border: 0;
+  background: ${(props) => (props.active ? 0 : props.theme.colors.highlight)};
+  border-radius: 5px;
+  position: ${(props) => (props.active ? "fixed" : "absolute")};
+  cursor: pointer;
+  right: 0px;
+  margin: 20px;
+  height: 42px;
+  width: 42px;
+  z-index: 4;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    display: block;
+  }
 `;

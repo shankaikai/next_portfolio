@@ -9,6 +9,16 @@ export const SectionContainer = styled.div`
   row-gap: 10px;
   max-width: 1200px;
   justify-self: center;
+  width: 100%;
+
+  @media ${(props) => props.theme.breakpoints.lg} {
+    padding: 30px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    padding: 20px;
+    border-radius: 0;
+  }
 `;
 
 export const SectionHeader = styled.h1`
@@ -47,16 +57,17 @@ export const SectionHighlight = styled.p`
 export const RowContainer = styled.div`
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   column-gap: 10px;
   row-gap: ${(props) => (props.gap ? props.gap : "10px")};
-  width: 100%;
+  width: auto;
   justify-content: ${(props) => (props.center ? "center" : "none")};
+  flex-wrap: wrap;
+  justify-self: center;
 `;
 
 export const Image = styled.img`
-  height: 200px;
-  width: 200px;
+  height: 180px;
+  width: 180px;
   border-radius: 5px;
   object-fit: cover;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);

@@ -15,11 +15,11 @@ import { socials, navitems } from "../../constants/constants";
 import NavItem from "../NavItem";
 import { useRouter } from "next/router";
 
-export default function Navbar() {
+export default function Navbar({ active, handleClick }) {
   const router = useRouter();
 
   return (
-    <FixedNavContainer>
+    <FixedNavContainer active={active}>
       <Avatar src="/images/profile_pic.jpg" />
       <Name>Tiong Shan Kai</Name>
       <Role>Software Enginner</Role>

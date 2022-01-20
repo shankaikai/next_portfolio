@@ -104,7 +104,7 @@ export const projects = [
       "Worked in a team of 4 people to A full stack web application created using React, Node, Express and MySQL to digitalise the audit process at SingHealth.",
       "Was heavily involved in the user interface, API and database design.",
     ],
-    skills: ["React", "Express", "MySQL", "Figma"],
+    skills: ["React", "Express", "MySQL", "Figma", "Azure", "Heroku"],
   },
   {
     image: "/images/portfoliowebsite.png",
@@ -115,9 +115,48 @@ export const projects = [
       "https://www.figma.com/file/5LSdp7qaIBy2Tw3UgtodBh/Portfolio?node-id=0%3A1",
     descriptions: [
       "Created a NextJs static site to showcase my achievements and projects.",
-      "Designed the web interface using Figma",
-      "Utilised Styled Components for styling",
+      "Designed the web interface using Figma.",
+      "Utilised Styled Components for styling.",
     ],
     skills: ["React", "NextJs", "Styled Components", "Figma"],
+  },
+];
+
+export const experiences = [
+  {
+    company: "Indeed",
+    icon: "cib:indeed",
+    title: "Software Engineer Intern",
+    date: "May 2021 - August 2021",
+    descriptions: [
+      "Internationalised Indeed’s global employer payment platform and made it available in multiple languages.",
+      "Developed unit and integration tests using Mockito and Jest.",
+      "Setup Jenkins pipeline for syncing of translation files.",
+      "Utilised Jira for project management.",
+      "Liaised with localization team for translation requests.",
+      "Worked with team on bug fixes and feature improvements.",
+    ],
+    skills: [
+      "React",
+      "Typescript",
+      "Styled System",
+      "Springboot",
+      "Java",
+      "Jenkins",
+      "Jira",
+    ],
+  },
+  {
+    company: "DHL Express",
+    icon: "fa-brands:dhl",
+    title: "Information Technology Intern",
+    date: "May 2020 - August 2020",
+    descriptions: [
+      "Developed a python script to automate sending of email/SMS payment notifications to customers daily using SMTP.",
+      "Developed a python script and R Shiny application to draw insights from Customer Service live chat transcripts which helped improve Customer Service agent feedback and training.",
+      "Worked with Programme Delivery team to build a website for internal use using ASP Net Core Razor Pages, HTML, CSS, JavaScript, SQL and BootStrap to manage customer on boarding.",
+      "Developed an Excel Macro file with VBA to automate billing report generation.",
+    ],
+    skills: ["Python", "C#", "ASP.NET", "Razor Pages", "VBA", "R Studio"],
   },
 ];
