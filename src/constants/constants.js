@@ -24,11 +24,9 @@ export const highlightedSkills = [
   "Typescript",
   "Java",
   "Springboot",
-  "Styled Components",
   "MySQL",
   "Python",
   "Express",
-  "Android",
 ];
 
 export const skillsImages = [
@@ -120,10 +118,58 @@ export const projects = [
     ],
     skills: ["React", "NextJs", "Styled Components", "Figma"],
   },
+  {
+    image: "/images/uniblock.png",
+    title: "UniBlock NFT Marketplace",
+    date: "January 2022 - April 2022",
+    source: "https://github.com/shankaikai/UniBlock-NFT-Marketplace",
+    descriptions: [
+      "Created a NFT marketplace using Solidity and React.",
+      "Smart contract deployed onto Ropsten testnet.",
+    ],
+    skills: ["React", "Solidity", "Heroku"],
+  },
+  {
+    image: "/images/hero-capstone.png",
+    title: "iMatrix Ecosystem",
+    date: "May 2022 - August 2022",
+    source: "https://github.com/shankaikai/imatrix-operations-ecosystem",
+    descriptions: [
+      "Collaborated with 5 others to build a digital ecosystem to enhance productity in iMatrix.",
+      "Created a dashboard to digitalise operations such as rostering and incident reporting.",
+      "Implemented real-time CCTV monitoring via video streams.",
+    ],
+    skills: ["React", "Typescript", "gRPC", "Python", "MySQL"],
+  },
 ];
 
 export const experiences = [
   {
+    id: 3,
+    company: "Indeed",
+    icon: "cib:indeed",
+    title: "Software Developer II",
+    date: "Sept 2022 - Mar 2023",
+    descriptions: [
+      "Developed features for Japan Employer team that owns job posting and management application for the Japan market. ",
+      "Built an end-to-end feature that allows employers to select account for interview bookings using React.ts and Java DGS GraphQL Framework.",
+      "Ensure code integrity with unit and integration tests using Jest, JUnit and TestCafe.",
+      "Handled on call bug investigation duties and monitor application performance and metrics using DataDog.",
+      "Worked on bug fixes and feature enhancements and accessibility-related issues to improve user experience.",
+      "Collaborated with UX designers and product managers on project discussions and deliverables using JIRA and Figma.",
+    ],
+    skills: [
+      "React",
+      "TypeScript",
+      "Styled System",
+      "Springboot",
+      "Java",
+      "GraphQL",
+      "DataDog",
+    ],
+  },
+  {
+    id: 2,
     company: "Indeed",
     icon: "cib:indeed",
     title: "Software Engineer Intern",
@@ -138,7 +184,7 @@ export const experiences = [
     ],
     skills: [
       "React",
-      "Typescript",
+      "TypeScript",
       "Styled System",
       "Springboot",
       "Java",
@@ -147,6 +193,7 @@ export const experiences = [
     ],
   },
   {
+    id: 1,
     company: "DHL Express",
     icon: "fa-brands:dhl",
     title: "Information Technology Intern",

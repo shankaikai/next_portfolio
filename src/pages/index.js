@@ -12,6 +12,7 @@ import {
   highlightedSkills,
   skillsImages,
   personalityImages,
+  socials,
 } from "../constants/constants";
 
 export default function AboutMe() {
@@ -19,14 +20,13 @@ export default function AboutMe() {
     <Section title="About Me">
       <SectionSubHeader>Introduction</SectionSubHeader>
       <SectionText>
-        Hi there, I am a final year student in the{" "}
-        <SectionHighlight>SUTD-SMU Dual Degree Program</SectionHighlight>{" "}
-        pursuing bachelor&#39;s degrees in{" "}
+        Hi there, I am a graduate from the{" "}
+        <SectionHighlight>SUTD-SMU Dual Degree Program</SectionHighlight> with
+        bachelor&#39;s degrees in{" "}
         <SectionHighlight>Computer Science</SectionHighlight> and{" "}
-        <SectionHighlight>Business Management</SectionHighlight> and will
-        graduate in September 2022. In the summer of 2021, I had the opportunity
-        to work in the International Payments team at Indeed where I contributed
-        to the internationalization of their global payment platform.
+        <SectionHighlight>Business Management</SectionHighlight> and graduated
+        in September 2022. I am a full stack engineer, with a passion for
+        building end-to-end products while adopting a user-centric perspective.
       </SectionText>
       <RowContainer center>
         {introductionImages.map(({ path, alt }) => (
@@ -69,7 +69,7 @@ export default function AboutMe() {
         Most would say that I am generally a{" "}
         <SectionHighlight>positive</SectionHighlight> person. Being a health
         advocate, I exercise regularly and participate in various sports. I also
-        love travelling, singing and cooking.
+        love travelling, singing, cooking and gaming.
       </SectionText>
       <RowContainer center>
         {personalityImages.map(({ path, alt }) => (
@@ -78,8 +78,8 @@ export default function AboutMe() {
       </RowContainer>
       <SectionSubHeader>Connect with me</SectionSubHeader>
       <SectionText>
-        To find out more about me, feel free to reach out on my LinkedIn or drop
-        me an email.
+        To find out more about me, feel free to reach out on my{" "}
+        <a href="socials.linkedin">LinkedIn</a> or drop me an email.
       </SectionText>
     </Section>
   );

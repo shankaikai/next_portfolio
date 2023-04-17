@@ -6,28 +6,28 @@ import Company from "../components/Company";
 import ExperienceDetails from "../components/ExperienceDetails";
 
 export default function Experience() {
-  const [active, setActive] = useState("Indeed");
-  const handleClick = (company) => {
-    setActive(company);
+  const [active, setActive] = useState(3);
+  const handleClick = (id) => {
+    setActive(id);
   };
 
   return (
     <Section title="Experience">
       <RowContainer>
-        {experiences.map(({ company, icon }) => (
+        {experiences.map(({ id, company, icon }) => (
           <Company
-            key={company}
-            active={active === company}
+            key={id}
+            active={active === id}
             icon={icon}
             company={company}
-            onClick={() => handleClick(company)}
+            onClick={() => handleClick(id)}
           />
         ))}
       </RowContainer>
-      {experiences.map(({ company, title, date, descriptions, skills }) => (
+      {experiences.map(({ id, company, title, date, descriptions, skills }) => (
         <ExperienceDetails
           key={title}
-          active={active === company}
+          active={active === id}
           title={title}
           date={date}
           descriptions={descriptions}
